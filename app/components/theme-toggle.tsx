@@ -1,7 +1,7 @@
 "use client";
 
 import { MdDarkMode, MdLightMode } from "react-icons/md";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
 const ThemeToggle = () => {
@@ -9,8 +9,9 @@ const ThemeToggle = () => {
     const {theme, setTheme} = useTheme();
 
     useEffect(() => {
+        console.log(theme);
         setIsMounted(true);
-    }, []);
+    }, [theme]);
 
     if (!isMounted) {
         return null;

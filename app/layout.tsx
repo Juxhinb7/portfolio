@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>
-          <ThemeProvider>
+          <ThemeProvider enableSystem={false}>
             <div className="container mx-auto min-h-screen">
               <NavBar />
               <main className="flex mx-auto w-[80vw] 2xl:w-[30vw]">
