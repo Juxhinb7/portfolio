@@ -26,7 +26,7 @@ const config: Config = {
           primary: "#000000",
           backgroundPrimary: "#f0f0f0",
         }
-      }
+      },
     ]
   },
   plugins: [require("rippleui")],

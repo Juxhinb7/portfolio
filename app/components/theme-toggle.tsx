@@ -1,7 +1,7 @@
 "use client";
 
 import { MdDarkMode, MdLightMode } from "react-icons/md";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTheme } from "next-themes";
 
 const ThemeToggle = () => {
@@ -9,13 +9,10 @@ const ThemeToggle = () => {
     const {theme, setTheme} = useTheme();
 
     useEffect(() => {
-        setIsMounted(true);
-    }, [theme]);
+        let dataTheme = document.documentElement.getAttribute("data-theme") as string;
+        setTheme(dataTheme);
 
-    if (!isMounted) {
-        return null;
-    }
-
+    }, []);
     
     return (
         <button aria-label="Toggle light / dark mode" aria-labelledby="label" className="hover:text-gray-400 fixed bottom-5 right-5 z-10" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
