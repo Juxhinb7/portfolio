@@ -5,9 +5,9 @@ import { HiDownload } from "react-icons/hi";
 const About = (): JSX.Element => {
     return (
         <div className="divide-y-2 divide-blue-300 dark:text-gray-200">
-          <h1 className="text-2xl font-bold mt-9">About me</h1>
+          <h1 className="text-2xl font-bold mt-6">About me</h1>
           <div>
-            <p className="mt-4">After graduating with an apprenticeship certificate (Ausbildungszeugnis) in Software Development in Germany, i decided to put my skills and experience that i gained while i was at school, in to work by building side projects and a portfolio.</p>
+            <p className="mt-4">After graduating with an apprenticeship certificate (Ausbildungszeugnis) in Software Development in Germany, I decided to put my skills and experience that I gained while  was at school, in to work by building side projects and a portfolio.</p>
             <p className="mt-4">My favorite part of programming is the problem-solving aspect.</p>
             <p className="mt-4">My current main stack is React, Next.js, Flask and Django. I am also familiar with TypeScript.</p>
             <p className="mt-4">I always strive to learn new technologies. I am currently looking for a full-time position as a software developer.</p>

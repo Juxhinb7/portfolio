@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "./components/navbar";
 import { Footer } from "./components/footer";
 import ThemeProvider from "./components/theme-provider";
+import ThemeToggle from "./components/theme-toggle";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,10 +25,11 @@ export default function RootLayout({
           <ThemeProvider>
             <div className="container mx-auto min-h-screen">
               <NavBar />
-              <main className="flex mx-auto w-[50%]">
+              <main className="flex mx-auto w-[80vw] 2xl:w-[30vw]">
                 <div className="mt-32 mx-auto">
                   {children} 
                 </div>
+                <ThemeToggle />
               </main>
 
               <Footer />        

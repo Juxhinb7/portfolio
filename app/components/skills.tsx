@@ -2,7 +2,7 @@ import { SKILLS } from "../lib/data";
 
 const Skills = (): JSX.Element => {
     return (
-        <div className="divide-y-2 pb-32 divide-blue-300">
+        <div className="divide-y-2 divide-blue-300">
             <h1 className="text-2xl mt-9 font-bold">Skills</h1>
             <div className="flex gap-2 flex-wrap">
                 {SKILLS.map((skill: {[key: string]: string}, index) => (

@@ -7,12 +7,12 @@ import { useParams } from "next/navigation";
 const NavBar = (): JSX.Element => {
     
     return (
-    <div className="mt-4 flex w-11/12 sm:w-10/12 2xl:w-4/12 mx-auto navbar navbar-sticky dark:bg-gray-700 rounded-lg">
+    <div className="mt-4 flex w-[80vw] 2xl:w-[32vw] mx-auto navbar navbar-sticky dark:bg-gray-700 rounded-lg">
         <div className="navbar-start">
             <h1 className=" font-bold">Porfolio</h1>
         </div>
         <div className="navbar-end space-x-4">
-            <ul className="space-x-4 hidden sm:block font-medium">
+            <ul className="space-x-2 hidden sm:block font-medium">
                 <Link href="/">
                     <span className="group">
                         <span className="opacity-0 group-hover:opacity-100 group-hover:text-blue-500 dark:group-hover:text-blue-300">
@@ -37,7 +37,6 @@ const NavBar = (): JSX.Element => {
                 </Link>
             </ul>
             <Dropdown />
-            <ThemeToggle />
         </div>
     </div>
     )

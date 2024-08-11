@@ -10,12 +10,16 @@ const ThemeToggle = () => {
 
     useEffect(() => {
         setIsMounted(true);
-        
     }, []);
+
+    if (!isMounted) {
+        return null;
+    }
+
     
     return (
-        <button aria-label="Toggle light / dark mode" aria-labelledby="label" className="hover:text-gray-400" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-            {theme === "light" ? <MdDarkMode className="font-medium text-2xl" /> : <MdLightMode className="font-medium text-2xl" />}
+        <button aria-label="Toggle light / dark mode" aria-labelledby="label" className="hover:text-gray-400 fixed bottom-5 right-5 z-10" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+            {theme === "light" ? <MdDarkMode className="font-medium text-3xl" /> : <MdLightMode className="font-medium text-3xl" />}
         </button>
 
     )
