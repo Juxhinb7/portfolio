@@ -11,7 +11,7 @@ const About = (): JSX.Element => {
             <p className="mt-4">My favorite part of programming is the problem-solving aspect.</p>
             <p className="mt-4">My current main stack is React, Next.js, Flask and Django. I am also familiar with TypeScript.</p>
             <p className="mt-4">I always strive to learn new technologies. I am currently looking for a full-time position as a software developer.</p>
-            <p className="mt-4">If you have any questions, don't hesitate to reach out. </p>
+            <p className="mt-4">If you have any questions, don&apos;t hesitate to reach out. </p>
             <div className="flex flex-row gap-2">
               <Link target="_blank" href="/github"><FaGithub className="mt-4 size-6 hover:text-gray-400" /></Link>
               <Link target="_blank" href="/linkedin"><FaLinkedin className="mt-4 size-6 hover:text-gray-400" /></Link>

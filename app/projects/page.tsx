@@ -5,8 +5,8 @@ import Link from "next/link";
 const Projects = () => {
     return (
         <div className="space-y-9 mt-4">
-            {PROJECTS.map((entry: {[key: string]: any}) => (
-                    <div className="card card-image-cover cursor-pointer">
+            {PROJECTS.map((entry: {[key: string]: any}, index) => (
+                    <div className="card card-image-cover cursor-pointer" key={index}>
                         <Link href={entry.url} target="_blank">
                             <Image src={entry.imageUrl} alt="Project image" className="mx-auto w-full"/>
                             <div className="card-body">
