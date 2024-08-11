@@ -68,7 +68,7 @@ export const PROJECTS = [
     {
         title: "Personal Portfolio",
         description: "This personal portfolio was built to demonstrate my current experience and skills.",
-        url: "/github",
+        url: "/portfolio",
         imageUrl: PortfolioImage,
         tools: ["React", "Next", "TypeScript", "Tailwind CSS"]
     },

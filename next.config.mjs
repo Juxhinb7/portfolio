@@ -15,6 +15,12 @@ const nextConfig = {
                 basePath: false
             },
             {
+                source: "/portfolio",
+                destination: "https://github.com/Juxhinb7/portfolio",
+                permanent: false,
+                basePath: false
+            },
+            {
                 source: "/github",
                 destination: "https://www.github.com/Juxhinb7",
                 permanent: false,
