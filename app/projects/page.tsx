@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Projects = () => {
     return (
-        <div className="space-y-9 mt-4">
+        <div className="grid lg:grid-cols-2 gap-4 mt-4">
             {PROJECTS.map((entry: {[key: string]: any}, index) => (
                     <div className="card card-image-cover cursor-pointer" key={index}>
                         <Link href={entry.url} target="_blank">
